@@ -159,7 +159,7 @@
                                 <div class="row">
                                     <div class="col-6">
                                         <ul class="list-group" id="goalPreviewList">
-                                            @foreach (json_decode($project->goals) as $goal)
+                                            @foreach (($project->goals) as $goal)
                                                 <li class="list-group-item d-flex justify-content-between goal-item">
                                                     <span class="current-goal">{{ $goal }}</span>
                                                     <div class="goal-item-icon">

@@ -71,7 +71,7 @@
                           <div id="collapseThree" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
                             <div class="accordion-body">
                                 <ul>
-                                    @foreach (json_decode($project->goals) as $goal)
+                                    @foreach (($project->goals) as $goal)
                                         <li>{{ $goal }}</li>
                                     @endforeach
                                 </ul>

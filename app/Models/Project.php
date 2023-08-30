@@ -15,6 +15,10 @@ class Project extends Model
         'title', 'description', 'image', 'status', 'nPartecipants', 'goals', 'budget',
     ];
 
+    protected $casts = [
+        'goals' => 'array',
+    ];
+
     public function type()
     {
         return $this->belongsTo(Type::class);

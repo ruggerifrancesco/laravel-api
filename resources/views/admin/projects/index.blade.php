@@ -49,7 +49,7 @@
                                                 </div>
                                                 <div class="modal-body">
                                                     <ul>
-                                                        @foreach (json_decode($project->goals) as $goal)
+                                                        @foreach (($project->goals) as $goal)
                                                             <li>{{ $goal }}</li>
                                                         @endforeach
                                                     </ul>

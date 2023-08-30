@@ -50,8 +50,6 @@ class ProjectController extends Controller
             'description' => ['required', 'min:30'],
         ]);
 
-        $dataProject['goals'] = json_encode($dataProject['goals']);
-
         if ($request->hasFile('image')) {
             $img_path = Storage::put('uploads/project-image/', $request->file('image'));
             $dataProject['image'] = $img_path;
