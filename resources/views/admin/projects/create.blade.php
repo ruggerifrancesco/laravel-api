@@ -94,7 +94,7 @@
                                                     placeholder="Goals">
                                                 <label for="newGoal">Goals</label>
                                             </div>
-                                            <button class="btn btn-outline-secondary" type="button" id="addGoalButton">Add Goal</button>
+                                            <button class="btn btn-outline-secondary addGoalButton" type="button" id="addGoalButton">Add Goal</button>
                                             @error('goals')
                                                 <div class="invalid-feedback">{{ $message }}</div>
                                             @enderror
