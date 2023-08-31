@@ -16,7 +16,7 @@ return new class extends Migration
             $table->id();
             $table->string('title')->unique();
             $table->text('description');
-            $table->integer('nPartecipants')->unsigned();;
+            $table->integer('nPartecipants')->unsigned();
             $table->json('goals');
             $table->float('budget')->unsigned();
             $table->text('image')->nullable()->default(DB::raw('NULL'));
